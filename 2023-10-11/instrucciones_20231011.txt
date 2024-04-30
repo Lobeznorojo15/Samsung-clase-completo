@@ -1,0 +1,124 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Actividad 0: Elegir un nombre para su equipo
+
+Actividad 1:
+
+    1. Conectar 3 LEDs (RGB) diferentes en RaspBerry (RB)
+    2. Crear un programa sque encienda el LED verde cuando corra y lo deje parpadeando utilizando un ambiente
+    virtual de python
+    3. Subir su código a un repositorio propio, utilizar el título pg1_20231011.py. Compartir link para clonarlo.
+    Utilizar .gitignore para ignorar el ambiente de python
+
+    scp -p 22 {nombre_del_archivo} {user_rb}@{direccion_rb}:~/{direccion_carpeta}
+
+
+
+
+
+
+
+
+DHCP - Asignación de IP automática, cuando el equipo no tiene asignada una IP
+
+RASPBERRY - POR DEFAULT TIENE DHCP - NO LE TIENES QUE ASIGNAR UNA IP ESTÁTICA
+
+LAN (CABLE) - AUTOMÁTICO
+WIFI - AUTOMÁTICO
+
+CUÁL ES LA IP DE MI INTERFAZ WIFI?
+	192.168.4.13
+
+1) RASPBERRY LE VOY A ASIGNAR UNA IP ESTÁTICA - 192.168.1.252
+2) A UNA DE MIS INTERFACES LE VOY CAMBIAR DE AUTOMÁTICO A ESTÁTICO - 192.168.1.2
+3) RASPBERRY LE VOY A ASIGNAR UNA NUEVA IP ESTÁTICA QUE ESTÉ EN MI RED DE WIFI - 192.168.4.252
+4) CAMBIO MI INTERFAZ DE MANUAL A AUTOMÁTICO
+
+
+
+
+
+
+
+
+
+Actividad 1.1:
+
+    1. Crear un programa que tome como entrada un color y prenda el LED correspondiente.
+    El programa también debe de dejar al usuario elegir si quiere que parpedee o no el LED correspondiente
+
+    2. Subir su nuevo programa a git con el título pg1_1_20231011.py
+
+	PD: EL PROGRAMA CORRE EN UN LOOP INFINITO (WHILE TRUE) HASTA DAR CTRL+C
+
+
+
+
+
+
+
+
+
+Actividad 2:
+    1. utilizando la librería psutil, crear un programa que encienda LEDs del RB en
+    base a lo siguiente:
+        Menos del 10% de CPU verde - sólido
+        Entre 10% y 20% Amarillo - sólido
+        Arriba del 20% - Rojo - parpadeante
+
+    1.1 - Subir el programa con el título pg2_20231016.py a su repositorio
+    1.2 - Pasar a nuestro RPB utilizando SCP para correrlo desde ahí
+
+    1.0 - Nombre de su equipo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    2. Crear otro programa que lea información de la nube constantemente (librería requests) 
+	y cálcule el promedio de temperatura. Esto a manera de similar el comportamiento de nuestro CPU
+
+    3. Subir el programa con el título pg2_20231011.py a su repositorio
+
+
+
+
+
+
+
+
